@@ -7,6 +7,5 @@ public class App {
 
         System.out.println(baralho.puxarCarta());
         System.out.println(baralho.puxarCarta());
-        System.out.println(baralho.puxarCarta());
     }
 }
