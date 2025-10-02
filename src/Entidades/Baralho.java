@@ -17,9 +17,18 @@ public class Baralho {
         }
     }
 
+    public Integer tamanhoBaralho(){
+        return baralho.size();
+    }
+
     public void resetar(){
         baralho = new ArrayList<>();
         embaralhado = false;
+        for (Naipe n : Naipe.values()){
+            for(int v = 1; v <=13; v++){
+                baralho.add(new Carta(n,v));
+            }
+        }
     }
 
     public Boolean getEmbaralhado(){

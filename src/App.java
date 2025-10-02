@@ -18,5 +18,9 @@ public class App {
                 break;
             }
         }
+        
+        // Testa reset do baralho
+        baralho.resetar();
+        System.out.println("Baralho resetado, cartas disponíveis: " + baralho.tamanhoBaralho());
     }
 }
