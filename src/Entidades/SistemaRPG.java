@@ -9,10 +9,12 @@ public class SistemaRPG {
     private Baralho baralho;
     private Carta carta;
 
+
     public SistemaRPG(){}
-    public SistemaRPG(Naipe naipe, Integer bonus){
+    public SistemaRPG(Naipe naipe, Integer bonus, Baralho baralho){
         this.naipe = naipe;
         this.bonus = bonus;
+        this.baralho = baralho;
     }
     public Naipe getNaipe() {
         return naipe;
@@ -28,17 +30,25 @@ public class SistemaRPG {
     }
 
     public Carta jogar(){
+        if(baralho == null){
+            return null;
+        }
+        
         if(!baralho.getEmbaralhado()){
             baralho.embaralhar();
         }
 
-        carta =  baralho.puxarCarta();
-        if(naipe == carta.getNaipe()){
-            carta.somarValor(bonus);
-        }
-        if(baralho == null){
+        carta = baralho.puxarCarta();
+        return carta;
+    }
+
+    public Integer somar(){
+        if(carta == null){
             return null;
         }
-        return carta;
+        if(naipe == carta.getNaipe()){
+            return carta.somarValor(bonus);
+        }
+        return carta.getValor();
     }
 }

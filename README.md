@@ -1,18 +1,10 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um sistema simples de simulador de cartas
+    Usado para jogar RPG de Mesa, sistemas que usam cartas ao invés de dados
 
-## Folder Structure
+Ele da um baralho para o jogador e o jogar vai puxando as cartas
+    cada jogador possue um nipe de proEficiencia, se a carta tirada for a desse nipe ele ganha o bonus e é somado automaticamente
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Então fica a vontade do mestre decidir o que irá fazer ou acontecer
+    Isso é mais para quem quer jogar e não tem baralho para jogar, isso facilita a vida de muitos.

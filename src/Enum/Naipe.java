@@ -3,6 +3,5 @@ public enum Naipe {
     COPAS,
     OURO,
     ESPADAS,
-    PAUS,
-    ACABOU
+    PAUS
 }

@@ -20,7 +20,6 @@ public class Carta {
         return valor + soma;
     }
     
-
     @Override
     public String toString() {
          return valor + " de " + naipe;
