@@ -10,7 +10,17 @@ public class Carta {
         this.naipe = naipe;
         this.valor = valor;
     }
-        
+    public Naipe getNaipe(){
+        return naipe;
+    }
+    public Integer getValor(){
+        return valor;
+    }
+    public Integer somarValor(Integer soma){
+        return valor + soma;
+    }
+    
+
     @Override
     public String toString() {
          return valor + " de " + naipe;
