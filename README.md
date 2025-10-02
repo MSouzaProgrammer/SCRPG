@@ -17,7 +17,7 @@ Permite que jogadores puxem cartas, aplique bônus de proficiência e mostre o r
 
 ## Tecnologias
 
-* Java 17 (ou versão que você utilizou)
+* Java 21
 * Console (sem frameworks adicionais)
 
 ---
